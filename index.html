@@ -1,0 +1,107 @@
+<html>
+  <head>
+    
+    <meta charset="utf-8">
+    
+    <link href="https://static.csat.ai/xtn/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/asd.css" rel="stylesheet" />
+    <link href="/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://static.csat.ai/xtn/js/jquery-3.5.1.min.js"></script>
+    <script
+      src="https://cdn.kustomerapp.com/card-js/latest/kustomer-card.js"
+      defer
+    ></script>
+    <script src="/script.js" defer></script>
+    
+  </head>
+  <body>
+    <div id="init_container">
+      <div id="subscription_details_content"></div>
+      <div id="error_message_content"></div>
+      <div id="content">
+        <div id="realtimeScore">
+          <div class="container-fluid xtn">
+            <div class="row wow_experience_row">
+              <div class="col-1" id="wow_experience" title="WOW! Service">
+                <i
+                  id="icon-wow_experience"
+                  class="fal fa-2x fa-circle color-silver"
+                ></i>
+              </div>
+              <div class="col-6">
+                WOW! Service<span
+                  id="grammar"
+                  name="grammar"
+                  class="popup"
+                ></span>
+                <div id="errorDiv" name="errorDiv" class="">
+                  <span id="errorTxt"> </span>
+                </div>
+              </div>
+              <div id="star-wow_experience" class="col">
+                <i class="fal fa-star purple-star" aria-hidden="true"></i>
+                <i class="fal fa-star purple-star" aria-hidden="true"></i>
+                <i class="fal fa-star purple-star" aria-hidden="true"></i>
+                <i class="fal fa-star purple-star" aria-hidden="true"></i>
+                <i class="fal fa-star purple-star" aria-hidden="true"></i>
+              </div>
+              <div id="wowScoreDiv" name="wowScoreDiv">
+                <span id="wowScoreTxt"></span>
+              </div>
+              <!-- <div class='col-12 row'>                 <div class='col-4 progress'>                   <div class='progress-bar' style='width:70%'>70%</div>                 </div>                 <div class='col-4 progress'>                   <div class='progress-bar' style='width:70%'>70%</div>                 </div>                 <div class='col-4 progress'>                   <div class='progress-bar' style='width:70%'>70%</div>                 </div>               </div> -->
+            </div>
+            <div class="row query_resolved_row">
+              <div class="col-1" id="query_resolved" title="Query Resolved">
+                <i
+                  id="icon-query_resolved"
+                  class="fal fa-2x fa-circle color-silver"
+                ></i>
+              </div>
+              <div class="col-6">Query Resolved</div>
+              <div id="star-query_resolved" class="col">
+                <i class="fal fa-star purple-star" aria-hidden="true"></i>
+                <i class="fal fa-star purple-star" aria-hidden="true"></i>
+                <i class="fal fa-star purple-star" aria-hidden="true"></i>
+                <i class="fal fa-star purple-star" aria-hidden="true"></i>
+                <i class="fal fa-star purple-star" aria-hidden="true"></i>
+              </div>
+              <div id="queryScoreDiv" name="queryScoreDiv">
+                <span id="queryScoreTxt"></span>
+              </div>
+            </div>
+            <div class="row shared_empathy_row">
+              <div class="col-1" id="shared_empathy" title="Empathy">
+                <i
+                  id="icon-shared_empathy"
+                  class="fal fa-2x fa-circle color-silver"
+                ></i>
+              </div>
+              <div class="col-6">Empathy</div>
+              <div id="star-shared_empathy" class="col">
+                <i class="fal fa-star purple-star" aria-hidden="true"></i>
+                <i class="fal fa-star purple-star" aria-hidden="true"></i>
+                <i class="fal fa-star purple-star" aria-hidden="true"></i>
+                <i class="fal fa-star purple-star" aria-hidden="true"></i>
+                <i class="fal fa-star purple-star" aria-hidden="true"></i>
+              </div>
+              <div id="empathyScoreDiv" name="empathyScoreDiv">
+                <span id="empathyScoreTxt"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div id="adminurl">
+          <center>
+            <span onclick="excludeMetricsResult(this)">
+              <i class="fal fa-square" id="exclude" name="exclude"></i> Exclude
+            </span>
+            <font size="2">|&nbsp;</font>
+            <a href="https://www.csat.ai/contact/" target="_blank">Support</a>
+          </center>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
